@@ -1,0 +1,64 @@
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px 64px;
+  text-align: left;
+}
+
+.categorie {
+  min-width: 0;
+}
+
+.categorieTitel {
+  font-family: var(--font-script);
+  font-size: 2rem;
+  color: var(--amber);
+  margin-bottom: 20px;
+}
+
+.lijst {
+  list-style: none;
+}
+
+.item {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.itemHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.itemNaam {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--parchment);
+}
+
+.dots {
+  flex: 1;
+  border-bottom: 1px dotted var(--line);
+  height: 1px;
+  margin-bottom: 4px;
+}
+
+.itemPrijs {
+  font-family: var(--font-display);
+  color: var(--amber-soft);
+  white-space: nowrap;
+}
+
+.itemBeschrijving {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: rgba(243, 234, 217, 0.6);
+}
+
+@media (max-width: 720px) {
+  .menu {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
